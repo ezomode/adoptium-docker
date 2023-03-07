@@ -18,3 +18,7 @@ jobs:
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+      -
+        name: Build
+        run: |
+          docker buildx build jdk17
